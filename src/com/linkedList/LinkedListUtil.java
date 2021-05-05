@@ -19,7 +19,15 @@ public class LinkedListUtil {
 		linkedlist1.append(56);
 		
 		linkedlist1.printList();
+		System.out.println("\n");
 		
+		LinkedList linkedlist2 = new LinkedList();
+		linkedlist2.append(56);
+		linkedlist2.append(40);
+		linkedlist2.append(70);
+		
+		linkedlist2.insertAfter(linkedlist2.head.next, 30);
+		linkedlist2.printList();
 	}
 }
 
@@ -67,6 +75,16 @@ class LinkedList {
     		 last = last.next;
     	     }
     	     last.next=newNode;
+     }
+     
+     public void insertAfter(Node prevNode, int data) {
+    	     if(prevNode==null) {
+    		 System.out.println("Previous node should not be null");
+    	     }
+    	 
+    	     Node newNode = new Node(data);
+    	     newNode.next = prevNode.next;
+    	     prevNode.next = newNode;
      }
      
 }
