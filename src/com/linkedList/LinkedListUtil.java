@@ -52,18 +52,25 @@ public class LinkedListUtil {
 		//To search for the Element by key
 		System.out.println("\n \nTo search the Element");
 		LinkedList linkedlist3 = new LinkedList();
-		linkedlist3.append(70);
-	        linkedlist3.append(30);
 		linkedlist3.append(56);
+	        linkedlist3.append(30);
+		linkedlist3.append(70);
 		linkedlist3.searchByKey(30);
 		
 		//To search and Insert element in the LinkedList
 		linkedlist3.searchandInsert(30, 40);
 		linkedlist3.printList();
 		
+		//To sort the LinkedList in Ascending order
+		System.out.println("\n \nLinkedList after sorting:");
+		linkedlist3.sortedList();
+		linkedlist3.printList();
+		
 		//To search and Delete element from the LinkedList
 		linkedlist3.searchAndDelete(linkedlist3, 40);
 		linkedlist3.printList();
+		
+		
 		
 	}
 }
