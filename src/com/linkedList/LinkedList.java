@@ -174,5 +174,33 @@ public class LinkedList {
 	         else
 		   System.out.println("Element not present");
     }
+    
+    public void searchAndDelete(LinkedList linkedlist3, int data) {
+    	
+    	         boolean flag=false;
+	         int index = 1;
+	         Node temp = head;
+	       
+	         if(head == null) {
+		   System.out.println("List is empty");
+	         }
+	   
+	         else {
+	           while(temp != null) {
+		    if(temp.data == data) {
+			   flag=true;
+			   break;
+		    }
+		    index++;
+		    temp = temp.next;
+	           }
+	         }
+	         if(flag) {
+	            System.out.println("\n\nElement present at the position:"+index);
+	            deletebyKey(linkedlist3, data);	 
+	         }
+	         else
+	            System.out.println("Element not present");
+    }
         
 }

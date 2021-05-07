@@ -59,7 +59,12 @@ public class LinkedListUtil {
 		
 		//To search and Insert element in the LinkedList
 		linkedlist3.searchandInsert(30, 40);
-		linkedlist3.printList();	
+		linkedlist3.printList();
+		
+		//To search and Delete element from the LinkedList
+		linkedlist3.searchAndDelete(linkedlist3, 40);
+		linkedlist3.printList();
+		
 	}
 }
 
