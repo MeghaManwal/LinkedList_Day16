@@ -8,8 +8,7 @@ public class LinkedListUtil {
 	
 	public static  void main(String[] args) {
 		
-		Node haed;
-		//To delete first element in the LinkedList
+		//To delete first element using pop in the LinkedList
 		LinkedList linkedlist = new LinkedList();
 		linkedlist.push(70);
 	        linkedlist.push(30);
@@ -22,7 +21,7 @@ public class LinkedListUtil {
 		linkedlist.printList();
 		System.out.println("\n Head Element after pop: "+ linkedlist.topValue());
 		
-		//To delete last element in the LinkedList
+		//To delete last element using poplast in the LinkedList
 		LinkedList linkedlist1 = new LinkedList();
 		linkedlist1.append(70);
 	        linkedlist1.append(30);
@@ -44,22 +43,23 @@ public class LinkedListUtil {
 		System.out.println("\n \nInsert 30 between 56 and 70");
 		linkedlist2.printList();
 		
-		//To Delete Element by Key
+		//To Delete the Element by Key
 		LinkedList linkedList = new LinkedList();
 		linkedList.deletebyKey(linkedlist2, 56);
 		System.out.println("\n \nLinkedList after deleting element");
 		linkedlist2.printList();
 		
-		//To search for Element by key
+		//To search for the Element by key
 		System.out.println("\n \nTo search the Element");
 		LinkedList linkedlist3 = new LinkedList();
 		linkedlist3.append(70);
 	        linkedlist3.append(30);
 		linkedlist3.append(56);
-		linkedlist3.append(40);
 		linkedlist3.searchByKey(30);
-			
 		
+		//To search and Insert element in the LinkedList
+		linkedlist3.searchandInsert(30, 40);
+		linkedlist3.printList();	
 	}
 }
 
